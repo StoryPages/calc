@@ -1,0 +1,96 @@
+.body {
+	background-color: pink;
+}
+
+.container {
+	display: grid;
+	place-items: center;
+	height: 100vh;
+	padding: 0 15px;
+}
+
+.wrapper {
+	display: grid;
+	padding: 30px 15px 15px;
+	background-color: white;
+	border-radius: 30px;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.show-number {
+	margin-bottom: 20px;
+	width: 340px;
+	height: 100px;
+	padding: 10px;
+	font-family: sans-serif;
+	font-size: 50px;
+	color: gray;
+	background-color: rgb(239, 246, 250);
+	outline: none;
+	border: none;
+	border-radius: 14px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	text-align: right;
+}
+
+.wrapper-buttons {
+	display: grid;
+	gap: 20px;
+	width: 340px;
+	place-items: center;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.button-calc {
+	display: grid;
+	place-items: center;
+	width: 70px;
+	height: 70px;
+	padding: 0;
+	font-family: sans-serif;
+	font-weight: 800;
+  font-size: 20px;
+	background-color: rgb(239, 246, 250);
+	border: none;
+	border-radius: 50%;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: .1s linear;
+}
+
+.button-calc:active{
+  background-color: gray;
+}
+
+.button-calc:active .span {
+	transform: scale(0.8);
+}
+
+
+.button-calc--end {
+	display: grid;
+	place-items: center;
+	grid-column: span 2;
+	width: 160px;
+	height: 70px;
+	font-family: sans-serif;
+	font-weight: 800;
+  font-size: 20px;
+	background-color: pink;
+	border: none;
+	border-radius: 50px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: .1s linear;
+}
+
+.button-calc--end:active{
+  background-color: gray;
+}
+
+.button-calc--end:active .span{
+  transform: scale(0.8);
+}
